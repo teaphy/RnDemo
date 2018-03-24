@@ -34,7 +34,7 @@ export default class App extends Component {
           {instructions}
         </Text>
         <Text>
-          这是一段话！
+          好神奇哦！一段神奇的话语！
         </Text>
       </View>
     );
