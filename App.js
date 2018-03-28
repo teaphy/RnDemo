@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -19,23 +20,46 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+let Dimensions = require('Dimensions')
+let width = Dimensions.get('window').width
+
+let cols = 3
+let wItem = 100
+let leftM = (width - wItem * cols) / (cols + 1) 
+
+// 解析json
+let bags = require('./bags.json')
 
 export default class App extends Component {
+
+
+  renderAllBagView(){
+    let bagViews = []
+    for(let i = 0; i < bags.data.length; i++) {
+      let {iconUrl, title} = bags.data[i]
+
+      let imgReq =
+      console.log(`iconUrl: ${iconUrl}`)
+      console.log(`imgReq: ${imgReq}`)
+      // 将view添加到数组
+      bagViews.push(
+        <View  key = {i} style={styles.bagContainer}>
+          <Image  source={  require( './imgs/shoutibao.png') }  style={styles.bagImg}/>
+          <Text style={styles.bagTitle}>
+            {title}
+          </Text> 
+        </View>
+      )
+    }
+
+    // 返回Views
+    return bagViews
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Text>
-          好神奇哦！一段神奇的话语！
-        </Text>
+        {this.renderAllBagView()}
       </View>
     );
   }
@@ -43,19 +67,27 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+   
+  },
+  bagContainer: {
+    width: wItem,
+    height: 120,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F1F1F1',
+    marginLeft: leftM,
+    marginTop: leftM,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  bagImg: {
+    width: 80,
+    height: 80
+  
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
+  bagTitle: {
+
+  }
+
 });
