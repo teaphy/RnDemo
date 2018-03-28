@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
 
   bagTitle: {
-
+    color: 'red',
   }
 
 });
