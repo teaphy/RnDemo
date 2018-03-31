@@ -33,8 +33,8 @@ export default class App extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        <Text>
-          好神奇哦！一段神奇的话语！
+        <Text style={styles.instructions}>
+          好神奇哦！一段神奇的话语！，是的，很神奇！
         </Text>
       </View>
     );
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: 'green',
     marginBottom: 5,
   },
 });
