@@ -1,0 +1,44 @@
+{
+  "data" : [
+    {
+      "icon" : "ic_share_1",
+      "title" : "小码哥分享"
+    },
+    {
+      "icon" : "ic_share_2",
+      "title" : "开心网分享"
+    },
+    {
+      "icon" : "ic_share_3",
+      "title" : "QQ分享"
+    },
+    {
+      "icon" : "ic_share_4",
+      "title" : "QQ空间分享"
+    },
+    {
+      "icon" : "ic_share_5",
+      "title" : "QQ微博分享"
+    },
+    {
+      "icon" : "ic_share_6",
+      "title" : "人人网分享"
+    },
+    {
+      "icon" : "ic_share_7",
+      "title" : "微信分享"
+    },
+    {
+      "icon" : "ic_share_8",
+      "title" : "微博分享"
+    },
+    {
+      "icon" : "ic_share_9",
+      "title" : "朋友圈分享"
+    },
+    {
+      "icon" : "ic_share_10",
+      "title" : "短信分享"
+    }
+  ]
+}

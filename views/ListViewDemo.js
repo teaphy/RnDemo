@@ -73,6 +73,7 @@ class ListViewDemo extends React.Component {
 }
 
 const styles = StyleSheet.create({
+
     cellContainer: {
         backgroundColor: 'white',
         borderBottomWidth: 1,

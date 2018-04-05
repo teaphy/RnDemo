@@ -18,7 +18,7 @@ import {
 // let LoginView = require('./loginView');
 import LoopImageView from './views/LoopImageView'
 import ListViewDemo from './views/ListViewDemo'
-
+import ShareView from './views/ShareDemo'
 // 添加本地数据
 
 
@@ -26,7 +26,7 @@ export default class App extends Component {
 	render() {
 		return (
 
-		    <ListViewDemo/>
+		    <ShareView/>
 
 		);
 	}
