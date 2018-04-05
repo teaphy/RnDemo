@@ -18,7 +18,7 @@ export default class LoginView extends Component{
 		return (
 			<View style={styles.container}>
 				<Image
-					source={require('./imgs/icon_head.png')}
+					source={require('../imgs/icon_head.png')}
 					style={styles.imageHeadStyle} />
 				
 				<View style={styles.accountContainer}>
@@ -47,9 +47,9 @@ export default class LoginView extends Component{
 						其他登录
 					</Text>
 					
-					<Image source={ require('./imgs/icon_qq.png') } style={styles.imageLoginStyle}/>
-					<Image source={ require('./imgs/icon_wx.png') } style={styles.imageLoginStyle}/>
-					<Image source={ require('./imgs/icon_wx.png') } style={styles.imageLoginStyle}/>
+					<Image source={ require('../imgs/icon_qq.png') } style={styles.imageLoginStyle}/>
+					<Image source={ require('../imgs/icon_wx.png') } style={styles.imageLoginStyle}/>
+					<Image source={ require('../imgs/icon_wx.png') } style={styles.imageLoginStyle}/>
 				</View>
 			</View>
 		);

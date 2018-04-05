@@ -5,13 +5,14 @@
  */
 
 import React, {Component} from 'react';
-import LoginView from './loginView'
+// import LoginView from './views/loginView'
 // let LoginView = require('./loginView');
+import LoopImageView from './views/LoopImageView'
 
 export default class App extends Component {
 	render() {
 		return (
-			<LoginView/>
+			<LoopImageView/>
 		);
 	}
 }
