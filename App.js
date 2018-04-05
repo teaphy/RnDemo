@@ -5,14 +5,29 @@
  */
 
 import React, {Component} from 'react';
+import {
+    View,
+    StyleSheet,
+    Text,
+    Image,
+    ListView
+} from 'react-native';
+
+
 // import LoginView from './views/loginView'
 // let LoginView = require('./loginView');
 import LoopImageView from './views/LoopImageView'
+import ListViewDemo from './views/ListViewDemo'
+
+// 添加本地数据
+
 
 export default class App extends Component {
 	render() {
 		return (
-			<LoopImageView/>
+
+		    <ListViewDemo/>
+
 		);
 	}
 }

@@ -7,8 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "es6-class-mixin": "^1.0.5",
     "react": "16.3.0-alpha.3",
-    "react-native": "0.54.2"
+    "react-native": "0.54.2",
+    "react-timer-mixin": "^0.13.3"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
