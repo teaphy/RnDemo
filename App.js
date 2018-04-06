@@ -19,6 +19,7 @@ import {
 import LoopImageView from './views/LoopImageView'
 import ListViewDemo from './views/ListViewDemo'
 import ShareView from './views/ShareDemo'
+import CarView from './views/CarView'
 // 添加本地数据
 
 
@@ -26,7 +27,7 @@ export default class App extends Component {
 	render() {
 		return (
 
-		    <ShareView/>
+		    <CarView/>
 
 		);
 	}
